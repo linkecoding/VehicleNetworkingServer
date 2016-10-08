@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>检查用户名重复</title>
+	<style type="text/css">
+	#index{
+		text-align: center;
+	}
+	input{
+		margin: 20px auto auto 20px;
+		height: 25px;
+		width: 260px;
+	}
+	</style>
+</head>
+<body>
+	<div id="index">
+		<h3>检查用户名重复接口测试</h3>
+		<form action="../php/checkuser.php" method="post">
+			用户名<input type="text" name="username"><br>
+			手机号<input type="text" name="telnum"><br>
+			<input type="submit" value="登录">
+		</form>
+	</div>
+</body>
+</html>

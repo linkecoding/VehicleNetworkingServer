@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>订单接口测试</title>
+	<style type="text/css">
+	#index{
+		text-align: center;
+	}
+	input{
+		margin: 20px auto auto 20px;
+		height: 25px;
+		width: 260px;
+	}
+	</style>
+</head>
+<body>
+	<div id="index">
+		<h3>订单接口测试</h3>
+		<form action="../php/addorder.php" method="post">
+			用户名&nbsp;<input type="text" name="username"><br>
+			订单时间<input type="text" name="order_time"><br>
+			加油站&nbsp;<input type="text" name="station"><br>
+			加油类型<input type="text" name="gas_type"><br>
+			加油数量<input type="text" name="gas_num"><br>
+			加油费用<input type="text" name="gas_fee"><br>
+			是否支付<input type="text" name="is_finished" placeholder="输入0或1"><br>
+			<input type="submit" value="添加订单">
+		</form>
+	</div>
+</body>
+</html>

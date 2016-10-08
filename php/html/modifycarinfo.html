@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>修改汽车动态信息</title>
+	<style type="text/css">
+	#index, #index2, #resText{
+		text-align: center;
+	}
+	input{
+		margin: 20px auto auto 20px;
+		height: 25px;
+		width: 260px;
+	}
+	</style>
+	<script type="text/javascript" src="../js/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="../js/getcarinfo2.js"></script>
+</head>
+<body>
+	<div id="index">
+		<h3>获取汽车动态信息并修改</h3>
+		<form>
+			用户名<input type="text" name="username" id="username"><br>
+			密&nbsp;码<input type="text" name="password" id="password"><br>
+			<input type="text" name="action" hidden="hidden" value="carinfo2" id="action"><br>
+			<input type="button" value="获取数据" id="subbtn">
+		</form>
+	</div>
+	<div id="resText">
+		汽车标号列表<select id="sel_car">
+		  
+		</select>
+	</div>
+
+	<div id="index2">
+		<h3>修改汽车信息二接口测试</h3>
+		<form action="../php/addcarinfo2.php" method="post">
+			标&nbsp;号<input type="text" name="id" id="car_id"><br>
+			用户名<input type="text" name="username" id="username2"><br>
+			里程数<input type="text" name="car_mileage" id="car_mileage"><br>
+			汽油量<input type="text" name="car_gasnum" id="car_gasnum"><br>
+			发动机<input type="text" name="car_engine_ok" placeholder="只能输入0或1" id="car_engine_ok"><br>
+			变速器<input type="text" name="car_transmission_ok" placeholder="只能输入0或1" id="car_transmission_ok"><br>
+			车&nbsp;灯<input type="text" name="car_light_ok" placeholder="只能输入0或1" id="car_light_ok"><br>
+			<input type="submit" value="修改信息">
+		</form>
+	</div>
+</body>
+</html>

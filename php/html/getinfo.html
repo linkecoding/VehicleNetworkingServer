@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>获取信息一接口</title>
+	<style type="text/css">
+	#index{
+		text-align: center;
+	}
+	input{
+		margin: 20px auto auto 20px;
+		height: 25px;
+		width: 260px;
+	}
+	</style>
+</head>
+<body>
+	<div id="index">
+		<h3>获取汽车信息接口测试(汽车表及订单表)</h3>
+		<form action="../php/getinfo.php" method="post">
+			用户名<input type="text" name="username"><br>
+			密&nbsp;码<input type="text" name="password"><br>
+			参&nbsp;数<input type="text" name="action" placeholder="输入carinfo1或carinfo2或orderinfo"><br>
+			<input type="submit" value="获取数据">
+		</form>
+	</div>
+</body>
+</html>

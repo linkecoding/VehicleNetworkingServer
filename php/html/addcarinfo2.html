@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>添加汽车信息二</title>
+	<style type="text/css">
+	#index{
+		text-align: center;
+	}
+	input{
+		margin: 20px auto auto 20px;
+		height: 25px;
+		width: 260px;
+	}
+	</style>
+</head>
+<body>
+	<div id="index">
+		<h3>添加汽车信息二接口测试</h3>
+		<form action="../php/addcarinfo2.php" method="post">
+			标&nbsp;号<input type="text" name="id" id="car_id"><br>
+			用户名<input type="text" name="username"><br>
+			里程数<input type="text" name="car_mileage"><br>
+			汽油量<input type="text" name="car_gasnum"><br>
+			发动机<input type="text" name="car_engine_ok" placeholder="只能输入0或1"><br>
+			变速器<input type="text" name="car_transmission_ok" placeholder="只能输入0或1"><br>
+			车&nbsp;灯<input type="text" name="car_light_ok" placeholder="只能输入0或1"><br>
+			<input type="submit" value="添加信息">
+		</form>
+	</div>
+</body>
+</html>
